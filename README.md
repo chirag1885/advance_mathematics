@@ -40,23 +40,24 @@ The probability density function used is:
 
 ## Methodology
 
-### 1️⃣ Roll-Based Nonlinear Transformation
+## 1️⃣ Roll-Based Nonlinear Transformation
 
 Each original NO₂ value \( x \) is transformed into \( z \) using:
 
-\[
+$$
 z = x + a_r \sin(b_r x)
-\]
+$$
 
 where
 
-\[
-a_r = 0.05(r \bmod 7)
-\]
+$$
+a_r = 0.05 (r \bmod 7)
+$$
 
-\[
-b_r = 0.3(r \bmod 5 + 1)
-\]
+$$
+b_r = 0.3 (r \bmod 5 + 1)
+$$
+
 
 For roll number **102303483**:
 
@@ -67,25 +68,26 @@ For roll number **102303483**:
 
 ---
 
-### 2️⃣ Parameter Estimation
+## 2️⃣ Parameter Estimation
 
 After removing missing values and computing statistics from the transformed variable \( z \):
 
 | Parameter | Estimated Value |
-|-----------|------------------|
+|-----------|-----------------|
 | \( \mu \) | 25.811134492949602 |
 | \( \lambda \) | 0.0014674149402736612 |
 | \( c \) | 0.021612327098739347 |
 
 Using:
 
-\[
+$$
 \lambda = \frac{1}{2\sigma^2}
-\]
+$$
 
-\[
+$$
 c = \sqrt{\frac{\lambda}{\pi}}
-\]
+$$
+
 
 ---
 
@@ -109,11 +111,8 @@ After transformation, the distribution becomes smoother. The fitted Gaussian-typ
 
 ## Final Estimated Density Function
 
-\[
-\hat{p}(z) =
-0.021612327098739347 \,
-e^{-0.0014674149402736612 (z - 25.811134492949602)^2}
-\]
+p̂(z) = 0.021612327098739347 · e^(−0.0014674149402736612 (z − 25.811134492949602)²)
+
 
 ---
 
