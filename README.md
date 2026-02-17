@@ -23,10 +23,10 @@ The study uses **NO₂ (Nitrogen Dioxide)** concentration values from the India 
 - Compare empirical distribution with theoretical density  
 
 The probability density function used is:
-
-\[
+$$
 \hat{p}(z) = c \, e^{-\lambda (z - \mu)^2}
-\]
+$$
+
 
 ---
 
