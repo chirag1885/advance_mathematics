@@ -23,6 +23,7 @@ The study uses **NO₂ (Nitrogen Dioxide)** concentration values from the India 
 - Compare empirical distribution with theoretical density  
 
 The probability density function used is:
+
 p̂(z) = c · e^(−λ (z − μ)²)
 
 
@@ -117,7 +118,5 @@ p̂(z) = 0.021612327098739347 · e^(−0.0014674149402736612 (z − 25.811134492
 ## Conclusion
 
 The roll-number-dependent nonlinear transformation provides a structured way to modify real-world environmental data before probabilistic modeling.  
-
 Using statistical estimation techniques, the parameters of a Gaussian-type distribution were successfully learned from the transformed NO₂ dataset.  
-
 The graphical comparison between empirical data and the theoretical density function confirms that the model provides a reasonable approximation of the transformed distribution.
